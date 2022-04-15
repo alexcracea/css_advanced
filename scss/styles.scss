@@ -1,0 +1,35 @@
+// mai intii facem import la toate din base
+@import "base/colors";
+@import "base/variables";
+@import "base/reset";
+@import "base/typography";
+@import "base/mixins";
+
+// apoi la toate din layout
+@import "layout/grid";
+@import "layout/section";
+
+// apoi la toate din (vendor)
+
+// apoi la toate din components
+@import "components/background-box";
+@import "components/blocks";
+@import "components/flex-boxes";
+@import "components/fonts";
+// si asa mai departe - toate componentele
+
+
+body {
+  background-color: $brand-secondary;
+  color: $brand-primary
+}
+
+a {
+  color: $brand-primary;
+}
+
+select {
+  appearance: none;
+  font-size: 14px;
+}
+
