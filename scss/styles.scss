@@ -1,4 +1,5 @@
 // mai intii facem import la toate din base
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "base/colors";
 @import "base/variables";
 @import "base/reset";
@@ -17,6 +18,8 @@
 @import "components/flex-boxes";
 @import "components/fonts";
 @import "components/responisve-box";
+@import "components/filters.scss";
+@import "components/gradients.scss";
 // si asa mai departe - toate componentele
 
 

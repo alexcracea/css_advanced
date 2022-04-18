@@ -1,0 +1,44 @@
+@import "base/colors";
+@import "base/variables";
+@import "base/reset";
+@import "base/typography";
+@import "base/mixins";
+
+// apoi la toate din layout
+@import "layout/grid";
+@import "layout/section";
+
+$header-height: 95px;
+$sidebar-width: 231px;
+
+.header {
+  height: $header-height;
+  background-color: yellow;
+}
+
+.sidebar {
+  position: fixed;
+  top: $header-height;
+  height: calc(100vh - #{$header-height});
+  width: $sidebar-width;
+  background-color: green;
+}
+
+.main {
+  position: fixed;
+  top: $header-height;
+  left: $sidebar-width;
+  height: calc(100vh - #{$header-height});
+  width: calc(100vw - #{$sidebar-width});
+  background-color: pink;
+}
+
+.main-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
