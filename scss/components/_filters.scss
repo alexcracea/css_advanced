@@ -1,0 +1,43 @@
+.filter-box {
+  width: 100%;
+}
+
+.filter-box--blur:hover {
+  filter: blur(2px);
+}
+
+.filter-box--brightness:hover {
+  filter: brightness(0.1);
+}
+
+.filter-box--contrast:hover {
+  filter: contrast(200%);
+}
+
+.filter-box--drop-shadow:hover {
+  filter: drop-shadow(50px 50px 0 red);
+}
+
+.filter-box--grayscale:hover {
+  filter: grayscale(100%);
+}
+
+.filter-box--hue-rotate:hover {
+  filter: hue-rotate(90deg);
+}
+
+.filter-box--invert:hover {
+  filter: invert(100%);
+}
+
+.filter-box--opacity:hover {
+  filter: opacity(30%);
+}
+
+.filter-box--saturate:hover {
+  filter: saturate(30%);
+}
+
+.filter-box--sepia:hover {
+  filter: sepia(100%);
+}
