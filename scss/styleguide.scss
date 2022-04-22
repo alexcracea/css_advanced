@@ -1,13 +1,5 @@
-@import "base/colors";
 @import "base/variables";
 @import "base/reset";
-@import "base/typography";
-@import "base/mixins";
-
-// apoi la toate din layout
-@import "layout/grid";
-@import "layout/section";
-
 $header-height: 95px;
 $sidebar-width: 231px;
 

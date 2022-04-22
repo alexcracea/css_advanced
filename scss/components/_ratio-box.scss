@@ -1,0 +1,47 @@
+.ratio-box {
+  position: relative;
+
+  &::before {
+    padding-top: 100%;
+    content: '';
+    display: block;
+  }
+
+  // @include breakpoint((-webkit-min-device-pixel-ratio 2) (min-resolution 192dpi) (orientation portrait)) {
+  //   &::before {
+  //     padding-top: 100%;
+  //     content: '';
+  //     display: block;
+  //   }
+  // }
+
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@include breakpoint(orientation portrait) {
+  // acest cod se va vedea doar pe ecrane RETINA
+  .ratio-box--16-9 {
+    &::before {
+      padding-top: 56.25%;
+    }
+  }
+
+  .ratio-box--4-3 {
+    &::before {
+      padding-top: 75%;
+    }
+  }
+
+  .ratio-box--1-1 {
+    &::before {
+      padding-top: 100%;
+    }
+  }
+}

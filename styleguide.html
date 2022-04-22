@@ -9,14 +9,44 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
 </head>
 <body>
+  <picture>
+    <source srcset="http://unsplash.it/1000/1000 1x, http://unsplash.it/2000/2000 2x" media="(min-width: 1200px)">
+    <source srcset="http://unsplash.it/100/100 1x, http://unsplash.it/200/200 2x" media="(min-width: 768px)">
+    <source srcset="http://unsplash.it/10/10 1x, http://unsplash.it/20/20 2x" media="(min-width: 0px)">
+    <img src="http://unsplash.it/10/10" alt="">
+  </picture>
+  <div class="section" id="ratio-box">
+    <h2 class="section__title">Ratio Box</h2>
+    <div class="section__content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="ratio-box ratio-box--16-9">
+              <img src="images/1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="ratio-box ratio-box--4-3">
+              <img src="images/1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="ratio-box ratio-box--1-1">
+              <img src="images/1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="section" id="gradients">
     <h2 class="section__title">Gradients</h2>
     <div class="section__content">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="gradient-box gradient-box--1"></div></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="gradient-box gradient-box--2"></div></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="gradient-box gradient-box--3"></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="gradient-box ratio-box gradient-box--1"></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="gradient-box ratio-box gradient-box--2"></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="gradient-box ratio-box gradient-box--3"></div></div>
         </div>
       </div>
     </div>
@@ -26,16 +56,16 @@
     <div class="section__content">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--blur" src="images/1.jpg" alt=""></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--brightness" src="images/1.jpg" alt=""></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--contrast" src="images/1.jpg" alt=""></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--drop-shadow" src="images/1.jpg" alt=""></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--grayscale" src="images/1.jpg" alt=""></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--hue-rotate" src="images/1.jpg" alt=""></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--invert" src="images/1.jpg" alt=""></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--opacity" src="images/1.jpg" alt=""></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--saturate" src="images/1.jpg" alt=""></div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><img class="filter-box filter-box--sepia" src="images/1.jpg" alt=""></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--blur" src="images/1.jpg" alt=""></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--brightness" src="images/1.jpg" alt=""></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--contrast" src="images/1.jpg" alt=""></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--drop-shadow" src="images/1.jpg" alt=""></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--grayscale" src="images/1.jpg" alt=""></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--hue-rotate" src="images/1.jpg" alt=""></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--invert" src="images/1.jpg" alt=""></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--opacity" src="images/1.jpg" alt=""></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--saturate" src="images/1.jpg" alt=""></div></div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3"><div class="ratio-box"><img class="filter-box filter-box--sepia" src="images/1.jpg" alt=""></div></div>
           
         </div>
       </div>

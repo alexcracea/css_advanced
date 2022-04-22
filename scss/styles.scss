@@ -1,5 +1,6 @@
 // mai intii facem import la toate din base
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
 @import "base/colors";
 @import "base/variables";
 @import "base/reset";
@@ -20,20 +21,5 @@
 @import "components/responisve-box";
 @import "components/filters.scss";
 @import "components/gradients.scss";
+@import "components/ratio-box.scss";
 // si asa mai departe - toate componentele
-
-
-body {
-  background-color: $brand-secondary;
-  color: $brand-primary
-}
-
-a {
-  color: $brand-primary;
-}
-
-select {
-  appearance: none;
-  font-size: 14px;
-}
-
