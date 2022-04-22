@@ -1,0 +1,51 @@
+.transform-action-area {
+  transform-style: preserve-3d;
+
+  &:hover {
+    .transform-element {
+      transform: rotateZ(-45deg);
+    }
+  }
+}
+
+/*
+
+scale(1.2) - permite marirea/micsorarea (scalarea) unui element pe baza unui coeficient
+scaleX(2) - scaleaza pe horizontal axis
+scaleY(0.5) - scaleaza pe vertical axis
+
+skew(45deg) - inclina (tilt) un element
+skewX(45deg) - inclina laturile verticale
+skewY(45deg) - inclina laturile orizontale
+
+
+translate(100px, 100px, 50px) - muta elementul din locul sau initial
+translateX() - muta pe orizontala
+translateY() - muta pe verticala
+translateZ(100px) - muta pe axa o-Z
+
+
+rotate(45deg) - roteste elementul pe o axa numita
+rotateX() - roteste pe axa o-X
+rotateY() - roteste pe axa o-Y
+rotateZ() - roteste pe axa o-Z 
+
+transform-style: flat || preserve-3d - defineste una din 2 stiluri: fie fara 3d grafica fie cu
+
+transform-origin: defineste punctul de pornire a unei transformari. Poate fi "left bottom" sau procentual "0% 100%".
+
+backface-visibility: visible || hidden - defineste daca partea din spate este vizibila utilizatorului din fata
+
+perspective: distanta intre z=0 si ecranul vizualizatorului
+
+perspective-origin: punctul din care perspective isi va porni numaratoarea
+*/
+
+.transform-element {
+  width: 100%;
+  height: 300px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
