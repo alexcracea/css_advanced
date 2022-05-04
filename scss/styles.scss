@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 // mai intii facem import la toate din base
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
@@ -24,4 +30,5 @@
 @import "components/ratio-box.scss";
 @import "components/transform.scss";
 @import "components/transition.scss";
+@import "components/forms.scss";
 // si asa mai departe - toate componentele

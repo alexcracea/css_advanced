@@ -5,10 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="section" id="forms">
+    <h2 class="section__title">Forms</h2>
+    <div class="section__content">
+      <h1>No-JS Dropdown Example</h1>
+      <input type="checkbox" class="dropdown-input visually-hidden" id="dropdown-input">
+      <label class="dropdown-button" for="dropdown-input">Toggle Dropdown</label>
+      <ul class="dropdown-list">
+        <li>Item #1</li>
+        <li>Item #2</li>
+        <li>Item #3</li>
+      </ul>
+
+      <h1>Radio Cards</h1>
+      <div class="cards-list">
+        <input checked type="radio" class="card-radio card-radio--1 visually-hidden" id="card-radio--1" name="card-list" value="1">
+        <input type="radio" class="card-radio card-radio--2 visually-hidden" id="card-radio--2" name="card-list" value="2">
+        <input type="radio" class="card-radio card-radio--3 visually-hidden" id="card-radio--3" name="card-list" value="3">
+        <input type="radio" class="card-radio card-radio--4 visually-hidden" id="card-radio--4" name="card-list" value="4">
+        <label for="card-radio--1" class="card-item card-item--1">Card item 1</label>
+        <label for="card-radio--2" class="card-item card-item--2">Card item 2</label>
+        <label for="card-radio--3" class="card-item card-item--3">Card item 3</label>
+        <label for="card-radio--4" class="card-item card-item--4">Card item 4</label>
+      </div>
+
+      <h1>Simple Select</h1>
+      <div class="simple-select">
+        <select name="simple-select" id="">
+          <option value="1">First First First First First </option>
+          <option value="2">Second</option>
+          <option value="3">Third</option>
+        </select>
+        <svg class="simple-select__arrow simple-select__arrow--closed" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M5.293 9.707l6 6c0.391 0.391 1.024 0.391 1.414 0l6-6c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
+        </svg>
+        <svg class="simple-select__arrow simple-select__arrow--open" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M18.707 14.293l-6-6c-0.391-0.391-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
+        </svg>
+      </div>
+
+      <h1>Advanced Select</h1>
+      <select class="js-advanced-select" name="adv_select" id="">
+        <option value="1">First</option>
+        <option value="2">second</option>
+        <option value="3">Third</option>
+      </select>
+    </div>
+  </div>
   <section class="section" id="transitions">
     <h2 class="section__title">Transitions</h2>
     <div class="section__content">
@@ -116,5 +164,9 @@
       </div>
     </div>
   </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

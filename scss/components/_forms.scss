@@ -1,0 +1,108 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.dropdown-input {
+  &:checked {
+    ~ .dropdown-list {
+      // display: block;
+      position: static;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    ~ .dropdown-button {
+      border-color: orange;
+    }
+  }
+}
+
+.dropdown-button {
+  padding: 5px 10px;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropdown-list {
+  // display: none;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-radio--1 {
+  &:checked {
+    ~ .card-item--1 {
+      opacity: 1;
+    }
+  }
+}
+
+.card-radio--2 {
+  &:checked {
+    ~ .card-item--2 {
+      opacity: 1;
+    }
+  }
+}
+
+.card-radio--3 {
+  &:checked {
+    ~ .card-item--3 {
+      opacity: 1;
+    }
+  }
+}
+
+.card-radio--4 {
+  &:checked {
+    ~ .card-item--4 {
+      opacity: 1;
+    }
+  }
+}
+
+.card-item {
+  padding: 10px 30px;
+  width: 50%;
+  background-color: #ddd;
+  opacity: 0.3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.simple-select {
+  position: relative;
+  width: 100px;
+}
+
+select {
+  appearance: none;
+  width: 100%;
+  padding: 10px 8px;
+  padding-right: 34px;
+  border: 2px solid #000;
+}
+
+.simple-select__arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.simple-select__arrow--open {
+  display: none;
+}
